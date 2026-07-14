@@ -43,11 +43,7 @@ function Navbar() {
               </Link>
             </li>
             {/* Cart icon space */}
-            <li className="nav-item ms-3">
-              <Link to="/add-to-cart">
-                <img src="src/assets/computer-icons-shopping-cart-retail-add-to-cart-button-thumbnail-Photoroom.png" alt="cart" style={{ height: '30px' }} />
-              </Link>
-            </li>
+           
           </ul>
         </div>
 

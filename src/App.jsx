@@ -8,7 +8,6 @@ import Footer from './Components/footer'
 import Home from './pages/home'
 import About from './pages/about-us'
 import Products from './pages/products'
-import AddToCart from './pages/addToCart'
 
 
 
@@ -26,7 +25,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/addToCart" element={<AddToCart />} />
       </Routes>
 
         </>

@@ -1,5 +1,6 @@
 import { Links } from "react-router-dom";
 import Navbar from "../Components/navbar";
+import Footer from "../Components/footer";
 
 function About() {
   return (
@@ -36,7 +37,7 @@ function About() {
 </div>
         
       
-      
+      <Footer />
     
 
 
