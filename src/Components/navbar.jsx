@@ -1,5 +1,8 @@
 
 import { Link } from 'react-router-dom'
+import logoimg from '../assets/amazon-logo-amazon-icon-transparent-free-png.webp'
+
+
 
 
 function Navbar() {
@@ -7,12 +10,10 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg custom-navbar" style={{ backgroundColor: '#8d8d8d' }}>
       <div className="container">
         
-        {/* Logo space */}
         <a className="navbar-brand" href="#">
-          <img src="src/assets/amazon-logo-amazon-icon-transparent-free-png.webp" alt="logo" style={{ height: '60px' , width: '130px' }} />
+          <img src={logoimg} alt="logo" style={{ height: '60px' , width: '130px' }} />
         </a>
 
-        {/* Toggle button for mobile view */}
         <button 
           className="navbar-toggler" 
           type="button" 
@@ -22,7 +23,6 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Links */}
 
         
         <div className="collapse navbar-collapse links" id="navbarNav">
@@ -42,7 +42,6 @@ function Navbar() {
                 Product
               </Link>
             </li>
-            {/* Cart icon space */}
            
           </ul>
         </div>

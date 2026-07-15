@@ -1,6 +1,13 @@
 import { Links } from "react-router-dom";
 import Navbar from "../Components/navbar";
 import Footer from "../Components/footer";
+import img1 from "../assets/computer-icons-instagram-logo-sticker-logo-Photoroom.png";
+import img2 from "../assets/facebook-logo-vector-icon-logotype-vector-eps_901408-408-Photoroom.png";
+import img3 from "../assets/images-Photoroom.png";
+
+
+
+
 
 function About() {
   return (
@@ -22,15 +29,15 @@ function About() {
 
      <div className="icons">
   <a href="https://www.instagram.com/amazon/reels/?hl=en" target="_blank" rel="noopener noreferrer">
-    <img src="src/assets/computer-icons-instagram-logo-sticker-logo-Photoroom.png" alt="instagram" className="icon" />
+    <img src={img1} alt="instagram" className="icon" />
   </a>
 
   <a href="https://www.facebook.com/Amazon/" target="_blank" rel="noopener noreferrer">
-    <img src="src/assets/facebook-logo-vector-icon-logotype-vector-eps_901408-408-Photoroom.png" alt="facebook" className="icon" />
+    <img src={img2} alt="facebook" className="icon" />
   </a>
 
   <a href="https://x.com/amazon" target="_blank" rel="noopener noreferrer">
-    <img src="src/assets/images-Photoroom.png" alt="twitter" className="icon" />
+    <img src={img3} alt="twitter" className="icon" />
   </a>
 
   
