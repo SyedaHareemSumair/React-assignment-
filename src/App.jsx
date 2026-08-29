@@ -1,34 +1,29 @@
-import { useState } from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './Components/navbar'
-import Carousel from './Components/Carousal'
-import Cards from './Components/cards'
-import Footer from './Components/footer'
+import ProductDetails from "./pages/ProductDetails";
 import Home from './pages/home'
 import About from './pages/about-us'
 import Products from './pages/products'
-
-
-
-
+import Signup from './pages/signup'
+import Login from './pages/login'
+import Cart from './pages/cart'
+import CartProvider from "./context/cartContext";
 
 
 function App() {
-
-
-    return (
-        <>
-
-
-       <Routes>
-        <Route path="/" element={<Home />} />
+  return (
+    <CartProvider>
+      <Routes>
+        <Route path="/" element={<Signup />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
-
-        </>
-
-    )
+    </CartProvider>
+  )
 }
-export default App 
+
+export default App

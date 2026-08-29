@@ -9,7 +9,7 @@ function Home() {
       <Navbar />
         <Carousel />
         <br />
-        <h2>Products</h2>
+        <h2>Products Overview</h2>
         <br />
         <Cards />
       <Footer />

@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+  "name": "Hareem",
+  "email": "hareem@test.com",
+  "password": "123456"
+}
+
+
+###
+
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "Classic Black Dress",
+  "price": 3500,
+  "description": "Elegant black dress for women",
+  "image": "https://example.com/black-dress.jpg",
+  "category": "Dresses",
+  "stock": 10
+}
+
+
+###
+
+
+GET http://localhost:5000/api/products
